@@ -1,10 +1,14 @@
 # angular-brunch-seed
 ### A started project for AngularJS using Brunch.io
 
-[AngularJS](http://angularjs.org) + [Brunch](http://brunch.io)
-
+[AngularJS](http://angularjs.org) + [Brunch](http://brunch.io) + [Jade](http://jade-lang.com/)
+ 
 Features:
+<<<<<<< HEAD
 * LiveScript / Less / Sass / SCSS / Stylus automatically compiled on save
+=======
+* Coffeescrpt / Jade / Less / Sass / SCSS / Stylus automatically compiled on save
+>>>>>>> fe87f9aa6fe875c17ba2e68c6ed67f9b17fac360
 * auto-reload during development saves you from manually refreshing the page
 * Javascript / CSS minification for production
 * [testacular](https://github.com/vojtajina/testacular) integration for
@@ -23,14 +27,9 @@ or if you have **Brunch** installed run:
 
 ### Running the app during development
 
-* `./scripts/server.sh` to serve using **Brunch**
+* `coffee ./scripts/development.coffee` to serve using **Brunch**
 
 Then navigate your browser to [http://localhost:3333](http://localhost:3333)
-
-
-#### Compiling jade files
-run `./scripts/compile-jade.sh` in a seperate window to watch and compile jade files. In the future this process
-will be integrated.
 
 ### Running the app in production
 
@@ -72,11 +71,19 @@ fetch the changes and merge them into your project with git.
     _public/                  --> Contains generated file for servering the app
                                   These files should not be edited directly
     app/                      --> all of the files to be used in production
+<<<<<<< HEAD
       app/                    --> base directory for app
         controllers.ls        --> application controllers
         directives.ls         --> custom angular directives
         filters.ls            --> custom angular filters
         services.ls           --> custom angular services
+=======
+      scripts/                --> base directory for app scripts
+        controllers.js        --> application controllers
+        directives.js         --> custom angular directives
+        filters.js            --> custom angular filters
+        services.js           --> custom angular services
+>>>>>>> fe87f9aa6fe875c17ba2e68c6ed67f9b17fac360
       assets                  --> a place for static assets. These files will be copied to
                                   the public directory un-modified.
         font/                 --> [fontawesome](http://fortawesome.github.com/Font-Awesome/) rendering icons
@@ -114,11 +121,10 @@ fetch the changes and merge them into your project with git.
       e2e/                    -->
         scenarios.js          --> end-to-end specs **NOT WORKING YET**
       unit/
-        app/
-          controllers.spec.js --> specs for controllers
-          directives.spec.js  --> specs for directives
-          filters.spec.js     --> specs for filters
-          services.spec.js    --> specs for services
+        controllers.spec.js   --> specs for controllers
+        directives.spec.js    --> specs for directives
+        filters.spec.js       --> specs for filters
+        services.spec.js      --> specs for services
       vendor/
         angular/              --> angular testing libraries
           angular-mocks.js    --> mocks that replace certain angular services in tests
